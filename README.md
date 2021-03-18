@@ -1,2 +1,2 @@
-# universal-score-keeper
-This is a universal score keeper built with Bulma and Javascript
+Welcome and thanks for taking the time to look at my Score Keeper
+
