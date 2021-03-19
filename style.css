@@ -1,3 +1,51 @@
+
+/* Title Settings */
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.titleSub {
+    display: flex;
+    justify-content: center;
+}
+
+/* Game Settings */
+
+.square {
+    display: inline-block;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;	
+}
+
+.container {
+    height: 470px;
+    width: 960px;
+    font-size: 0;
+    margin: auto;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+.userInput {
+    display: grid;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.resetButton:hover {
+    background-color: lightgrey;
+}
+
+.resetButton {
+    border-radius: 5px;
+}
+
 .copyright {
     display: flex;
     justify-content: center;
