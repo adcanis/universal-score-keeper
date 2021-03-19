@@ -4,38 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/ae22e6262a.js" crossorigin="anonymous"></script>
-    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Score Keeper</title>
 </head>
 
 <body>
-
-<div class="title">
-    <h1 id="title">Etch-A-Sketch</h1>
-</div>
-
-<div class="titleSub">
-    <h2 id="titleSub">A simple example of a classic game</h2>
-</div>
-    
-
-
-<div class="game">
-<div class="userInput">  
-    <p for="size">Choose your Sketch Pad Size</p>
-    <input id="size" type="range" name="Sketch Size" min="16" max="100">
-    <button class="resetButton" onClick="window.location.reload();">Reset</button>
-</div>
-
-<div class="container"></div>
-</div>
-
-<script src="app.js"></script>    
-</body>
-
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card has-text-centered">
+                    <div class="card-image">
+                        <figure class="image is 2by1">
+                            <img src="imgs/score_keeper.jpg">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title is-centered">
+                        Universal Score Keeper
+                    </p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <p class="subtitle">Use the buttons below to update the score for each player </p>
+                        <label for="" class="label is-large is-inline">How Many Rounds</label>
+                        <div class="select is-rounded">
+                            <select id="round">
+                                <option value="3">3</option>
+                                <option value="5">5</option>option>
+                                <option value="7">7</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1Button" class="is-primary button card-footer-item is-large">Player One</button>
+                        <button id="reset" class="is-danger button card-footer-item is-large">Reset</button>
+                        <button id="p2Button" class="is-primary button card-footer-item is-large">Player Two</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="app.js"></script>
 <footer class="copyright">
     <p>Project by  <a id='copyrightLink' href='https://github.com/adcanis'><span class='fab fa-github'></span> adcanis </a></p>
 </footer>
-
+</body>
 </html>
